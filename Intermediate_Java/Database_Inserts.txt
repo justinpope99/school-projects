@@ -1,0 +1,70 @@
+CREATE TABLE Courses (
+	courseID varchar(255),
+	subjectID varchar(255),
+	courseNumber varchar(255),
+	title varchar(255),
+	numOfCredits varchar(255)
+);
+
+CREATE TABLE Students (
+	ssn varchar (255),
+	firstName varchar (255),
+	mi varchar (255),
+	lastName varchar (255),
+	birthDate varchar (255),
+	street varchar (255),
+	phone varchar (255),
+	zipcode varchar (255),
+	deptId varchar (255)
+);
+
+CREATE TABLE Enrollment (
+	ssn varchar (255),
+	courseID varchar(255),
+	dateRegistered varchar(255),
+	grade varchar(255)
+);
+
+INSERT INTO Courses (courseID, subjectID, courseNumber, title, numOfCredits)
+VALUES
+('ACC11', '1101', 5, 'Accounting', 4),
+('AFR12', '2342', 1, 'African Literature', 3),
+('CST00', '0008', 7, 'Intro to Computer Science', 4),
+('CST01', '0001', 1, 'Intro to Java Programming', 4),
+('CST02', '0002', 2, 'Advanced Java', 4),
+('CST03', '0003', 3, 'Intro to C++', 4),
+('CST04', '0006', 1, 'Database Programming', 4),
+('CST06', '0005', 5, 'Intro to SQL', 4),
+('CST07', '0999', 3, 'Strategic Management', 2),
+('CST08', '4708', 2, 'Database Web Application', 3),
+('CST0A', '0008', 7, 'Intro to Computer Science', 4),
+('CST10', '2410', 3, 'Introduction to Security', 3),
+('CST13', '0007', 6, 'Web Servlet', 3),
+('CST14', '0007', 3, 'Networking', 2),
+('CST19', '3519', 4, 'Introduction to XML', 3),
+('CST35', '3504', 1, 'Database Design', 3),
+('CST36', '0001', 1, 'Project Management', 3),
+('CST42', '4714', 6, 'Database Administration', 3),
+('CST47', '0002', 2, 'Database Administration', 3),
+('CST48', '4800', 11, 'Project Management', 3),
+('CST55', '9990', 4, 'Introduction of Java', 3),
+('CST71', '4713', 14, 'Web Development(Servlets)', 3),
+('ENG01', '0001', 4, 'English', 3),
+('ENG25', '2575', 10, 'Technichal Writing', 3),
+('MATH2', '2540', 15, 'Discrete Mathematics 2', 3),
+('PSY35', '0003', 3, 'Health Psychology', 3);
+
+INSERT INTO Students (ssn, firstName, mi, lastName, birthDate, street, phone, zipcode, deptId)
+VALUES
+('111222333', 'Jake', 'T', 'Smith', '1987-01-01', '111 Stewart Ave', '9172333434', '10011', 'MATH'),
+('444555666', 'John', 'D', 'Jefferson', '1988-06-20', '123 Jay St.', '9172453434', '11209', 'CST'),
+('777888999', 'Walter', 'H', 'Thomas', '1989-08-15', '1125 E 172nd', '9172333657', '10012', 'CST');
+
+INSERT INTO enrollment (ssn, courseID, dateRegistered, grade)
+VALUES
+('111222333', 'CST01', '11-8-2022', 'A'),
+('111222333', 'CST02', '11-8-2022', 'B'),
+('444555666', 'CST06', '11-8-2022', 'A'),
+('444555666', 'CST08', '11-8-2022', 'C'),
+('777888999', 'ACC11', '11-8-2022', 'A'),
+('777888999', 'CST00', '11-8-2022', 'A');
