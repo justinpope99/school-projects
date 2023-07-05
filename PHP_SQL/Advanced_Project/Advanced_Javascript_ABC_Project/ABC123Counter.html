@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC 123 Counter</title>
+    <link rel="stylesheet" href="counter.css">
+</head>
+<body>
+    <h1>Pope, Justin ABCCounter</h1>
+    <table>
+        <tr>
+            <td>
+                <fieldset id="fsMode">
+                    <legend>Mode</legend>
+                        <span><input title="abc" name="mode" data-mode="a"  type="radio" onclick="countFromRadio(this)"> abc</span>
+                        <span><input title="abc" name="mode" data-mode="z"  type="radio" onclick="countFromRadio(this)"> cba</span>
+                        <span><input title="abc" name="mode" data-mode="A"  type="radio" onclick="countFromRadio(this)"> ABC</span>
+                        <span><input title="abc" name="mode" data-mode="Z"  type="radio" onclick="countFromRadio(this)"> CBA</span>
+                        <span><input title="abc" name="mode" data-mode="aA" type="radio" onclick="countFromRadio(this)"> abcABC</span>
+                        <span><input title="abc" name="mode" data-mode="Aa" type="radio" onclick="countFromRadio(this)" checked> abcABC</span>
+                        <span><input title="abc" name="mode" data-mode="Zz" type="radio" onclick="countFromRadio(this)"> CBAcba</span>
+                        <span><input title="abc" name="mode" data-mode="aZz" type="radio" onclick="countFromRadio(this)"> abcCBAcba</span>
+                        <input type="hidden" id="abcGenerator" value="Aa" />
+                </fieldset>
+            </td>
+            <td>
+                <fieldset id="fsHighLight">
+                    <legend>HighLight</legend>
+                    <span><input title="abc" name="highLight" data-highLight="v"  type="radio" onclick="highLight(this)"> Vowel</span>
+                    <span><input title="abc" name="highLight" data-highLight="c"  type="radio" onclick="highLight(this)"> Consonant</span>
+                    <span><input title="abc" name="highLight" data-highLight="n"  type="radio" onclick="highLight(this)" checked> None</span>
+                    <span><input title="abc" name="highLight" data-highLight="a"  type="radio" onclick="highLight(this)"> All</span>
+                    <input type="hidden" id="highLightselected" value="n" />
+                </fieldset>
+            </td>
+        </tr>
+
+    </table>
+    
+    <div id="screen-display">
+        <div class="abc">A</div>
+        <div class="abc">B</div>
+        <div class="abc">C</div>
+        <div class="abc">D</div>
+        <div class="abc">E</div>
+        <div class="abc">F</div>
+        <div class="abc">G</div>
+        <div class="abc">H</div>
+        <div class="abc">I</div>
+        <div class="abc">J</div>
+        <div class="abc">K</div>
+        <div class="abc">L</div>
+        <div class="abc">M</div>
+        <div class="abc">N</div>
+        <div class="abc">O</div>
+        <div class="abc">P</div>
+        <div class="abc">Q</div>
+        <div class="abc">R</div>
+        <div class="abc">S</div>
+        <div class="abc">T</div>
+        <div class="abc">U</div>
+        <div class="abc">V</div>
+        <div class="abc">W</div>
+        <div class="abc">X</div>
+        <div class="abc">Y</div>
+        <div class="abc">Z</div>
+        <div class="abc">a</div>
+        <div class="abc">b</div>
+        <div class="abc">c</div>
+        <div class="abc">d</div>
+        <div class="abc">e</div>
+        <div class="abc">f</div>
+        <div class="abc">g</div>
+        <div class="abc">h</div>
+        <div class="abc">i</div>
+        <div class="abc">j</div>
+        <div class="abc">k</div>
+        <div class="abc">l</div>
+        <div class="abc">m</div>
+        <div class="abc">n</div>
+        <div class="abc">o</div>
+        <div class="abc">p</div>
+        <div class="abc">q</div>
+        <div class="abc">r</div>
+        <div class="abc">s</div>
+        <div class="abc">t</div>
+        <div class="abc">u</div>
+        <div class="abc">v</div>
+        <div class="abc">w</div>
+        <div class="abc">x</div>
+        <div class="abc">y</div>
+        <div class="abc">z</div>
+    </div>
+    <div class="developer">Developer: Pope, Justin
+        <span id="rowCount">##</span>
+    </div>
+    <script src="counter.js"></script>
+    <script src="ABC123Counter.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+*{	
+	font-family:verdana;	
+}
+
+caption, button {
+	font-size: 45pt;
+	padding-bottom: 12px;	
+}
+
+button  {
+	padding: 10px;	
+    width: 3in;
+
+}
+
+#game tfoot tr td {
+	font-size: 20pt;
+	text-align: center;	
+	height: 1in;
+}
+
+table#game {
+	border-collapse: collapse;
+}
+
+#game {
+    margin-left:auto; 
+    margin-right:auto;
+    
+ }
+
+#game td {
+	
+	width: 2in;
+	height: 2in;
+	font-size: 1.6in;
+	text-align:center;		
+}
+
+#game tbody td {
+	border: solid 1px black;	
+}
+
+#game tbody td.top {
+  border-top: 1px solid white; 
+}
+
+#game tbody td.bottom {
+  border-bottom: 1px solid white; 
+}
+
+#game tbody td.left {
+  border-left: 1px solid white; 
+}
+
+#game tbody td.right {
+  border-right: 1px solid white; 
+}
+
+table#game tbody tr td.winner {
+  color: green; 
+}

@@ -1,0 +1,74 @@
+
+*{
+    font-family: Verdana, Geneva Tahoma, sans-serif;
+    font-size: 15pt;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+div.developer {
+    font-size: 90%;
+}
+
+div.abc, div.abcS52, div.abcS26 {
+    font-size:35pt;
+    float: left;
+    margin: 3.6px;
+    border: solid 1px black;
+    height: 1in;
+    width: 1in;
+    text-align: center;
+    padding-top: 30px;
+}
+
+div.abcS52 {
+    font-size:25pt;
+    height: .83in;
+    width: .85in;
+    padding-top: 26px;
+    margin-right: 8px;
+}
+
+div.abcS26 {
+    font-size:60pt;
+    height: 1.55in;
+    width: 1.55in;
+    padding-top: 15px;
+}
+
+div.highLight {
+    background-color: antiquewhite;
+    border: dashed 1px black;
+}
+
+#screen-display {
+    height: 11in;
+    width: 10in;
+    display: block;
+}
+
+#fsMode, #fsHighLight {
+    display: inline-block;
+    height: 1.3in;
+}
+
+#fsMode {
+    width: 5.55in;
+}
+
+#fsMode span {
+    width: 1.5in;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+#fsHighLight {
+    width: 3in;
+}
+
+#fsHighLight span {
+    width: 1.6in;
+    display: inline-block;
+    margin-bottom: 3px;
+}

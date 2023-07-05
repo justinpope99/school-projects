@@ -1,0 +1,93 @@
+
+*{
+    font-family: Verdana, Geneva Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+div.developer {
+    font-size: 90%;
+}
+
+div.abc, div.abcS52, div.abcS26 {
+    font-size:35pt;
+    float: left;
+    margin: 3.6px;
+    border: solid 1px black;
+    height: 1in;
+    width: 1in;
+    text-align: center;
+    padding-top: 30px;
+}
+
+div.abcS52 {
+    font-size:25pt;
+    height: .83in;
+    width: .85in;
+    padding-top: 26px;
+    margin-right: 8px;
+}
+
+div.abcS26 {
+    font-size:60pt;
+    height: 1.55in;
+    width: 1.55in;
+    padding-top: 15px;
+}
+
+#screen-display > div.n123 {
+    float: left;
+    font-size: 11pt;
+    height: .32in;
+    width: .426in;
+    margin-left: 3px;
+    margin-right: 1px;
+
+    margin-top: 8px;
+    padding-top: 6x !important;
+    border: solid 1px black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.data-entry {
+    width: .55in;
+}
+
+div.highLight {
+    background-color: antiquewhite;
+    border: dashed 1px black;
+}
+
+#screen-display {
+    max-height: 7in;
+    width: 10in;
+    display: block;
+    overflow-y: scroll;
+}
+
+#fsMode, #fsHighLight {
+    display: inline-block;
+    height: 1.3in;
+}
+
+#fsMode {
+    width: 5.55in;
+}
+
+#fsMode span {
+    width: 1.5in;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+#fsHighLight {
+    width: 3in;
+}
+
+#fsHighLight span {
+    width: 1.6in;
+    display: inline-block;
+    margin-bottom: 3px;
+}

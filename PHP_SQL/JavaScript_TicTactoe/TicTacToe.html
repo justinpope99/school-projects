@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>TicTacToe</title>
+<link rel="stylesheet" type="text/css" href="TicTacToe.css">
+
+</head>
+<body>
+	<table id="game">
+		<caption>Tic Tac Toe</caption>
+		<tbody>
+			<tr>
+				<td class="top left">&nbsp;</td>
+				<td class="top">&nbsp;</td>
+				<td class="top right">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="left">&nbsp;</td>
+				<td>&nbsp;</td>
+				<td class="right">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="bottom left">&nbsp;</td>
+				<td class="bottom">&nbsp;</td>
+				<td class="bottom right">&nbsp;</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td id="message" colspan="3">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<button type="button" id="reset">Reset</button>
+				</td>
+			</tr>
+		</tfoot>
+	</table>	
+	<script src="TicTacToe.BL.js"></script>
+	<script src="TicTacToe.GUI.js"></script>
+</body>
+</html>
