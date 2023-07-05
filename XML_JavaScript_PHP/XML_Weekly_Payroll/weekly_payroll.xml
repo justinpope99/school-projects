@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="weekly_payroll.xsl"?>
+
+<employees>  
+    <employee id="001">  
+        <name>        Rita Pavone</name>  
+        <hourlyrate>15</hourlyrate>  
+        <hoursworked>40</hoursworked>  
+    </employee>  
+    <employee id="002">  
+        <name>Samuel Jackson</name>  
+        <hourlyrate>14</hourlyrate>  
+        <hoursworked>42</hoursworked>  
+    </employee>  
+    <employee id="003">  
+        <name>Samantha Chen</name>  
+        <hourlyrate>15</hourlyrate>  
+        <hoursworked>45</hoursworked>  
+    </employee>  
+    <employee id="004">  
+        <name>Anthony Khan</name>  
+        <hourlyrate>18</hourlyrate>  
+        <hoursworked>35</hoursworked>  
+    </employee>  
+</employees>

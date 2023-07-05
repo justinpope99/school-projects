@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            function runjQuery()
+            {
+                var inputSearch = $("#searchTxtBx").val();
+                
+                $.ajax({
+                    url:        "Movie_List.php",
+                    data:       "searchKey="+inputSearch,
+                    success:    function(serverdata)
+                    {
+                        $("#showselect").html(serverdata);
+                    }
+                });
+            }
+
+            function showMovieInfo()
+            {
+
+                var optionValue = $("#movieList").val();
+
+                var film = optionValue.split(",")[0];
+                var year = optionValue.split(",")[1];
+                var director = optionValue.split(",")[2];
+
+                $("#showoutput").html(film + " (" + year + "), " + director);
+            }
+
+        </script>
+    </head>
+    <body onload="runjQuery()">
+        <h2>Oscar Movie Search By Movie, Year, Director</h2>
+        <p></p>
+        Search: <div class="A" style="display:inline-block">
+            <div>
+            <input type="text" autofocus id="searchTxtBx"
+                        placeholder = "Search by title or year or director" onkeyup="runjQuery()"/>
+            </div>
+        </div>
+        <p></p>Search Result:
+        <p></p>
+        <div id="showselect" style="display:inline-block"></div>
+        <p></p>
+        <div id="showoutput" style="display:inline-block"></div>
+
+    </body>
+</html>

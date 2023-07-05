@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script type="text/javascript">
+                function runAjax()
+                {
+                    //create Ajax agent - it depends on the browser
+                    if(window.XMLHttpRequest) var ajaxAgent = new XMLHttpRequest();
+                    else var ajaxAgent = ActiveXObject("Microsoft.XMLHTTP"); //only for IE
+
+                    //open communication to a server's program Hwk6.php
+                    ajaxAgent.open("GET","distance.php",true);
+                    ajaxAgent.send(null);
+
+                    ajaxAgent.onreadystatechange = function()
+                    {
+                        //check the handshake and HTTP status
+                        if (ajaxAgent.readyState == 4 && ajaxAgent.status == 200)
+                        {
+                            //display server's response at the placeholder
+                            document.getElementById("showselect").innerHTML = ajaxAgent.responseText;
+                        }
+                    }
+                }//end of function runAjax()
+
+                function showdistance()
+                {
+                    //value of selected option
+                    var selectedOption = document.getElementById("countryList").value;
+
+                    //selectedOption is a string with values separated by comma
+                    //use javascript function split() to separate the values
+                    //this function results in a array
+                    var country = selectedOption.split(",")[0];
+                    var capital = selectedOption.split(",")[1];
+                    var miles = selectedOption.split(",")[2];
+                    var km = selectedOption.split(",")[3];
+
+                    //now display the info at the placeholder
+                    document.getElementById("showinfo").innerHTML = "Country: " + country + "<br/>" +
+                                                                    "Capital: " + capital + "<br/>" +
+                                                                    "Distance from NY To " + capital + "<br/>" +
+                                                                    "Miles: " + miles + "<br/>" +
+                                                                    "Kilometers: " + km + "<br/>";
+                }
+            </script>
+        </head>
+        <body onload="runAjax()">
+            <h2>Distance from NY to World Capital</h2>
+            <p></p>
+            <!-- create a placeholder right next to City: -->
+            City: <span id="showselect"></span>
+            <p></p>
+            <div id="showinfo"></div>
+        </body>
+    </html>

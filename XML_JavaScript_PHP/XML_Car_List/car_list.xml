@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="car_list.xsl"?>
+<cars>
+    <car>
+        <make>Ford</make>
+        <model>Mustang</model>
+        <year>2019</year>
+        <pic>mustang2019.jpg</pic>
+    </car>
+    <car>
+        <make>GM</make>
+        <model>Buick Encore</model>
+        <year>2022</year>
+        <pic>gmbuickencore2022.jpg</pic>
+    </car>
+    <car>
+        <make>GM</make>
+        <model>Silverado</model>
+        <year>2022</year>
+        <pic>gmsilverado2022.jpg</pic>
+    </car>
+    <car>
+        <make>Toyota</make>
+        <model>Land Cruiser</model>
+        <year>2019</year>
+        <pic>toyotalandcruiser2019.jpg</pic>
+    </car>
+        <car>
+        <make>Ford</make>
+        <model>MustanG</model>
+        <year>2018</year>
+        <pic>mustang2018.jpg</pic>
+    </car>
+        <car>
+        <make>GM</make>
+        <model>Encore</model>
+        <year>2019</year>
+        <pic>gmbuickencore2019</pic>
+    </car>
+</cars>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- download jQuery from Google's CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            function runjQuery()
+            {
+                //using ajax to communicate with the server's PHP program
+                $.ajax({
+                    //the parameters
+                    url:        "US_Presidents.php",
+                    success:    function(serverdata)
+                    {
+                        $("#showunorderedList").html(serverdata);
+                    }
+                });
+            }//end of function runjQuery()
+
+            function showinfo()
+            {
+                var passString = $("$nameList").val();
+                $("#showoutput").html(passString);
+            }
+
+        </script>
+    </head>
+    <body onload="runjQuery()">
+        <h2>US Presidents (Partial List)</h2>
+        <p></p>
+        <span id="showunorderedList"></span>
+        <p></p>
+        <div id="showoutput"></div>
+    </body>
+</html>

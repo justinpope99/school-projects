@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="historical_figures.xsl" type="text/xsl"?>
+
+<!-- persons(/) -->
+<persons>
+  <person>
+    <Name>Abraham_Lincoln</Name>
+    <Nationality>USA</Nationality>
+    <Profession>Politician</Profession>
+    <Picture>Abraham_Lincoln.jpeg</Picture>
+  </person>
+  <person>
+    <Name>Benito Juarez</Name>
+    <Nationality>Mexico</Nationality>
+    <Profession>Politician</Profession>
+    <Picture>Benito_Juarez.jpeg</Picture>
+  </person>
+  <person>
+    <Name>Claude Monet</Name>
+    <Nationality>France</Nationality>
+    <Profession>Painter</Profession>
+    <Picture>Claude_Monet.jpeg</Picture>
+  </person>
+  <person>
+    <Name>Charles Darwin</Name>
+    <Nationality>England</Nationality>
+    <Profession>Scientist</Profession>
+    <Picture>Charles_Darwin.jpeg</Picture>
+  </person>
+  <person>
+    <Name>Deng Xiaoping</Name>
+    <Nationality>China</Nationality>
+    <Profession>Politiciann</Profession>
+    <Picture>Deng_Xiaoping.jpeg</Picture>
+  </person>
+  <person>
+    <Name>Frederick Chopin</Name>
+    <Nationality>Poland</Nationality>
+    <Profession>Musician</Profession>
+    <Picture>Frederick_Chopin.jpeg</Picture>
+  </person>
+  <person>
+    <Name>George Washington Carver</Name>
+    <Nationality>UsA</Nationality>
+    <Profession>Scientist</Profession>
+    <Picture>George_Washington_Carver.jpeg</Picture>
+  </person>
+  <person>
+    <Name>Georgia O’Keeffe</Name>
+    <Nationality>USA</Nationality>
+    <Profession>Writer</Profession>
+    <Picture>Georgia_OKeeffe.jpeg</Picture>
+  </person>
+  <person>
+    <Name>Mahatma Gandhi</Name>
+    <Nationality>India</Nationality>
+    <Profession>Politician</Profession>
+    <Picture>Mahatma_Gandhi.jpeg</Picture>
+  </person>
+  <person>
+    <Name>Mark Twain</Name>
+    <Nationality>USA</Nationality>
+    <Profession>Writer</Profession>
+    <Picture>Mark_Twain.jpeg</Picture>
+  </person>
+  <person>
+    <Name>Muhammad Jinnah</Name>
+    <Nationality>Pakistan</Nationality>
+    <Profession>PolitiCian</Profession>
+    <Picture>Muhammad_Ali_Jinnah.jpeg</Picture>
+  </person>
+  <person>
+    <Name>Pablo Picasso</Name>
+    <Nationality>Spain</Nationality>
+    <Profession>Painter</Profession>
+    <Picture>Pablo_Picasso.jpeg</Picture>
+  </person>
+  <person>
+    <Name>Santos Dumont</Name>
+    <Nationality>Brazil</Nationality>
+    <Profession>Scientist</Profession>
+    <Picture>Santos_Dumont.jpeg</Picture>
+  </person>
+</persons>

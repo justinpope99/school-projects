@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function validateinputs()
+            {
+                //read inputs username and password - use DOM (Document Object Model)
+                //when form and element have a name
+                //var inputuserName = window.document.loginform.usernameTxtBx.value;
+
+                //form without a name
+                var inputuserName = window.doucument.getElementByID("usernameTxtBx").value;
+                var inputPwd = document.getElementById("pwdTxtBx").value;
+
+                //validate username not blank only letters
+                if (inputuserName !="" && inputuserName.length==6)
+                {
+                    //ensuring there is no number in username
+                    for(var i=0; i<inputuserName.length; i++)
+                    {
+                        var achar = inputuserName.charAt(i);
+                        if (!isNaN(achar))
+                        {
+                            alert('Invalid username');
+                            return false;
+                        }
+
+                    }
+                    //validate password: 6-digit only
+                    if (inputPwd.length == 6 && !isNaN(inputPwd)) return true;
+                    else
+                    {
+                        alert('Invalid password');
+                        return false;
+                    }
+
+                }
+                else
+                {
+                    alert('Invalid username');
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Login</h2>
+        <form action="Validate_Inputs.php" method="post" onsubmit="return validateinputs();">
+        Username: <input type="text" name="usernameTxtBx" id="usernameTxtBx" 
+                    placeholder="6-letter only" autofocus/>
+        <p></p>
+        Password: <input type="text" name="pwdTxtBx" id="pwdTxtBx"
+                        placeholder="6-digit only"/>
+        <p></p>
+        <input type="submit" value="Login"/>
+        </form>
+    </body>
+</html>

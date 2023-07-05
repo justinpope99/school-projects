@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- This will make the interaction with the user quicker -->
+<html>
+    <head>
+        <script type="text/javascript">
+            function runAjax()
+            {
+                //read input city (use DOM - Document Object Model)
+                var inputCity = window.document.getElementById("cityTxtBx").value;
+
+                //validate inputCity: not blank and not numeric
+                if (inputCity != "" && isNaN(inputCity))
+                {
+                    //using Ajax to access a file at the server
+                    //create an object of class XMLHttpRequest()
+                    //but it depends on the browser
+                    if (window.XMLHttpRequest) var ajaxAgent = new XMLHttpRequest();
+                    else var ajaxAgent = new ActiveXObject("Microsoft.XMLHTTP"); //for IE browser
+
+                    //open communication with the server's program; let's use the GET method
+                    ajaxAgent.open("GET", "ajax_2.php?cityKey=" + inputCity,true);
+                    ajaxAgent.send(null);
+
+                    //check for hand-shakes and HTTP response
+                    ajaxAgent.onreadystatechange = function()
+                    {
+                        if (ajaxAgent.readyState == 4 && ajaxAgent.status == 200)
+                        {
+                            //display the server's response at the placeholder
+                            document.getElementById("showdistance").innerHTML = ajaxAgent.responseText;
+                        }
+                    }
+                }
+            }//end of function runAjax()
+
+            function clearOutput()
+            {
+                //clear placeholder
+                document.getElementById("showdistance").innerHTML = "";
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Distance from NY to a City</h2>
+            Enter a City: <input type="text" name="cityTxtBx" id="cityTxtBx" 
+                            autofocus onchange="runAjax()" onkeyup="clearOutput()"/>
+            <p></p>
+            <!-- create a placeholder 
+                using any HTML block element (p, div, span, etc) for the php response -->
+                <div id="showdistance"></div>
+
+    </body>
+</html>

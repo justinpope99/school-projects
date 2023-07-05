@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function checkform()
+            {
+                alert("inside checkform()");
+                //read input city (use DOM - Document Object Model)
+                var inputCity = window.document.distform.cityTxtBx.value;
+                alert("Your city is " + inputCity);
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Distance from NY to a City</h2>
+        <form name="distform" action="ajax.php">
+            Enter a City: <input type="text" name="cityTxtBx" id="cityTxtBx" 
+                            onsubmit="return checkform();" autofocus/>
+            <p></p>
+            <input type="submit" value="Submit"/>
+        </form>
+    </body>
+</html>

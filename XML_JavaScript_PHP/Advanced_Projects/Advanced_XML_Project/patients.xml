@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="patients.xsl"?>
+
+<patients>
+   <patient patID="MR890-041-02" onStudy="TBC-080-5">
+      <lastName>Dibbs</lastName>
+      <firstName>Cynthia</firstName>
+      <dateOfBirth>1945-05-22</dateOfBirth>
+      <age>62</age>
+      <stage>II</stage>
+      <comment></comment>
+      <performance scale="Karnofsky">0.81</performance>
+   </patient>
+   <patient patID="MR771-121-10" onStudy="TBC-080-5">
+      <lastName>Wilkes</lastName>
+      <firstName>Karen</firstName>
+      <dateOfBirth>1959-02-24</dateOfBirth>
+      <age>61</age>
+      <stage>II</stage>
+      <comment>Dropped out of study.</comment>
+      <performance scale="Karnofsky">0.84</performance>
+   </patient>
+   <patient patID="MR701-891-05" onStudy="TBC-080-5">
+      <lastName>Sanchez</lastName>
+      <firstName>Olivia</firstName>
+      <dateOfBirth>1988-08-14</dateOfBirth>
+      <age>32</age>
+      <stage>II</stage>
+      <comment>Possibly stage I/II. Karnofsky performance rating unavailable.</comment>
+      <performance scale="Bell">0.89</performance>
+   </patient>
+   <patient patID="MR805-891-08" onStudy="TBC-080-5">
+      <lastName>Russell</lastName>
+      <firstName>Alice</firstName>
+      <dateOfBirth>1952-09-14</dateOfBirth>
+      <age>68</age>
+      <stage>II</stage>
+      <comment></comment>
+      <performance scale="Karnofsky">0.95</performance>
+   </patient>
+   <patient patID="MR815-741-03" onStudy="TBC-080-5">
+      <lastName>Browne</lastName>
+      <firstName>Brenda</firstName>
+      <dateOfBirth>1994-12-25</dateOfBirth>
+      <age>26</age>
+      <stage>I</stage>
+      <comment></comment>
+      <performance scale="Karnosfky">0.88</performance>
+   </patient>
+   <patient patID="MR825-601-06" onStudy="TBC-080-5">
+      <lastName>Khan</lastName>
+      <firstName>Aline</firstName>
+      <dateOfBirth>1972-01-25</dateOfBirth>
+      <age>48</age>
+      <stage>I</stage>
+      <comment>Patient recovering well</comment>
+      <performance scale="Bell">0.88</performance>
+   </patient>
+</patients>

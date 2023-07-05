@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="count_function.xsl"?>
+
+<employees>
+    <employee>
+        <name>Mary Khan</name>
+        <dept>Accounting</dept>
+        <hourlyrate>21</hourlyrate>
+        <hoursworked>44</hoursworked>
+    </employee>
+    <employee>
+        <name>Kate Chen</name>
+        <dept>Human Resources</dept>
+        <hourlyrate>20</hourlyrate>
+        <hoursworked>46</hoursworked>
+    </employee>
+    <employee>
+        <name>John Rodriguez</name>
+        <dept>Production</dept>
+        <hourlyrate>19</hourlyrate>
+        <hoursworked>43</hoursworked>
+    </employee>
+    <employee>
+        <name>Leslie Montgomery</name>
+        <dept>Human Resources</dept>
+        <hourlyrate>20</hourlyrate>
+        <hoursworked>38</hoursworked>
+    </employee>
+</employees>
